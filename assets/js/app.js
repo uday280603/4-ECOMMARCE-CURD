@@ -16,8 +16,6 @@ const productName = document.getElementById("productName");
 const productCategory = document.getElementById("productCategory");
 const productBrand = document.getElementById("productBrand");
 const productPrice = document.getElementById("productPrice");
-
-
 Products = [
   {
     product_id: uuidv4(),
@@ -98,7 +96,7 @@ function formSubmitEvent(ele) {
                 <td><i onclick="deleteHandler(this)" class="fa-solid fa-trash-can text-danger fa-2x" role="button"></i></td>
   
   `;
-
+  
   productContainer.append(tr);
   snackbar(`${productObj.product_name} Added successfully in database...!!`);
 }
